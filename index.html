@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html ng-app='MidiAuto'>
+<head>
+
+    <!--<base href="/stream1-project/">-->
+    <base href="/">
+    
+    <title>Midi Automation</title>        
+    
+<!--*************************************************************************************************-->
+
+    <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css\main.css">
+    
+    <script type="text/javascript" src="bower_components/angular/angular.js"></script>
+    <script type="text/javascript" src="bower_components/angular-route/angular-route.js"></script>
+    <script type="text/javascript" src="bower_components/a0-angular-storage/dist/angular-storage.js"></script>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css" type="text/css"/>
+    
+<!--*************************************************************************************************-->
+
+
+<!--*************************************************************************************************-->
+
+</head>
+<body>
+    
+<!--************************************************************************************************ Nav Bar-->    
+    <nav id="ma-navbar" class="navbar navbar-default navbar-fixed-top">
+        <div class='container'>
+
+            <div class="nav navbar-header">
+            
+                <img src="images/ma-logo.png" class="navbar-brand" alt="Logo">                
+                <a href="#" class="nav-a navbar-brand"><span class="nav-span">Midi Automation</span></a>
+            
+                <button type="button" id="nav-button" class="navbar-toggle collapsed "
+                    data-toggle="collapse"
+                    data-target=".ma-nav-collapse">
+                    <!--creates collapsed menu icon appearance-->
+                    <span class="nav-span icon-bar"></span>
+                    <span class="nav-span icon-bar"></span>
+                    <span class="nav-span icon-bar"></span>
+                </button>
+            </div>
+            <!--the id here is used to link to the button -->
+            <ul class="ma-nav-collapse nav navbar-nav collapse navbar-collapse navbar-right">
+                <li class="col-sm-4 col-xs-12 ">
+                    <a  href="/" class="nav-a hvr-grow"><span class="nav-span">HOME</span></a>    
+                </li>    
+                <li class="col-sm-4 col-xs-12 ">
+                    <a href="/faq" class="nav-a hvr-grow"><span class="nav-span">FAQ</span></a>    
+                </li>    
+                <li class="col-sm-4 col-xs-12 ">
+                    <a href="/contact" class="nav-a hvr-grow"><span class="nav-span">CONTACT</span></a>
+                </li>    
+            </ul>
+        </div>
+    </nav>    
+
+<!--*************************************************************************************************-->
+    <div ng-view>
+ 
+         <!----All content from the template is loaded into this space depending on the page you're in --->
+         <!----HTML5 says that it should have the 'data' prefix as in data-ng-view --->
+    </div>
+    
+<!--*************************************************************************************************-->
+
+<footer class="navbar-default navbar-fixed-bottom">
+    <div id="div-footer" class="container">
+        <span>This is the footer - line 1....</span>
+        <span>This is the footer - line 2....</span>
+        <span>This is the footer - line 3....</span>
+    </div>
+</footer>
+
+<!--*************************************************************************************************-->
+
+<script src='js/app.js'></script>
+<script src='js/controllers.js'></script>
+<script src='js/services.js'></script>
+<script src='js/directives.js'></script>
+
+<script type="text/javascript" src="bower_components/jquery/dist/jquery.js"></script>
+<script type="text/javascript" src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+
+<!--*************************************************************************************************-->
+
+
+</body>
+<!--*************************************************************************************************-->
+
+</html>

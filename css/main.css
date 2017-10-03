@@ -1,0 +1,63 @@
+body {
+    padding-top:120px;
+    padding-bottom:120px;
+}
+
+@media screen and (max-width: 768px) {
+    body { padding-top: 240px; }
+}
+
+/*------------------------------------------------------------------------------------------ Nav Bar */		
+
+#nav-button{
+    margin-top: 25px;
+    border-color:black;
+}
+
+#nav-button:hover{
+    background-color:white;
+}
+
+#nav-button:focus{
+    background-color:white;
+}
+
+#nav-button span{
+    background-color:black;
+}
+
+#ma-navbar{
+    padding-top:30px;
+}
+.nav-a{
+    text-align:center;
+}
+
+.nav-span{
+    color:black;
+}
+ 
+.navbar-brand {
+    text-align: left;
+    width:100px;
+    height: 75px;
+}
+
+.navbar-default {
+    background-color: white;
+    border-color: white;
+}
+
+
+/*------------------------------------------------------------------------------------------ footer */
+
+#div-footer{
+    height: 100px;
+    padding: 20px;
+}
+
+#div-footer span{
+    display:block;
+    color:black;
+}
+/*------------------------------------------------------------------------------------------*/
