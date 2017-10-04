@@ -1,8 +1,14 @@
 angular.module("MidiAutoDirective",[])
 
-.directive("faq-code", function() {
+.directive("faqSetOne", function() {
     return {
         restrict: "A",
-        templateUrl: "templates/directives/faq-code.html"
+        templateUrl: "templates/directives/faq-set-one.html"
     };
 })
+.directive("faqSetTwo", function() {
+    return {
+        restrict: "A",
+        templateUrl: "templates/directives/faq-set-two.html"
+    };
+});
