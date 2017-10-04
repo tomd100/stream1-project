@@ -7,6 +7,22 @@ body {
     body { padding-top: 240px; }
 }
 
+.back-to-top {
+    cursor: pointer;
+    position: fixed;
+    bottom: 120px;
+    right: 40px;
+    display:none;
+    background-color:gray;
+    border-color: gray;
+    opacity: .70;
+}
+
+.back-to-top:hover {
+    opacity:1;
+    background-color:gray;
+}    
+
 /*------------------------------------------------------------------------------------------ Nav Bar */		
 
 #nav-button{
@@ -50,9 +66,30 @@ body {
 
 /*------------------------------------------------------------------------------------------ Home Page */
 
+#home-intro-div{
+    text-align:center;
+    height: 500px;
+    line-height: 495px;
+    background-color: rgba(245, 245, 245, 0.4);
+}
+
+#home-intro-div span{
+    color: black;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+
 .home-section{
     padding: 20px;
-    height:400px;
+    /*max-height:400px;*/
+}
+
+@media screen and (min-width: 480px){
+    #home-section1, #home-section2, #home-section3, #home-section4{
+        padding-top:100px;
+        padding-bottom: 100px;
+    }
 }
 
 /*.home-text-div{*/
@@ -65,10 +102,10 @@ body {
 }
 
 .home-img{
-    max-width: 100%;
+    max-width: 70%;
 }
 
-.sect4-img{
+.home-sect4-img{
     max-width: 70%;
 }
 
@@ -78,6 +115,10 @@ body {
     padding: 20px;
     height:300px;
 }
+
+/*------------------------------------------------------------------------------------------ Contact Page */
+
+/*------------------------------------------------------------------------------------------ About Page */
 
 /*------------------------------------------------------------------------------------------ footer */
 
@@ -90,4 +131,4 @@ body {
     display:block;
     color:black;
 }
-/*------------------------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------------------------media queries */

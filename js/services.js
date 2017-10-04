@@ -9,18 +9,30 @@ angular.module('UserService', [])                           //[] means no other 
         return UserAPIService;
     });
     
-//*************************************************************************************************
-
-angular.module('MidiAutoService', [])
-    .factory('MidiAutoAPIService', function($http) {
-        
-        MidiAutoAPIService = {
-            getTodos: function(url, data, token){
-                var header = "Authorization: JWT " + token;
-                return $http.get(url, {params:{"username":data}}, header);  // might be more data than this. 
-            }
-        };
-        return MidiAutoAPIService;
-    });
+//*************************************************************************************************    
+angular.module("MidiAutoService", [])
+    .factory('scrollService', function() {
     
+    scrollService={
+        pageScroll:function(){
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 50) {
+                    $('#back-to-top').fadeIn();
+                } else {
+                    $('#back-to-top').fadeOut();
+                }
+            });
+            // scroll body to 0px on click
+            $('#back-to-top').click(function () {
+                $('#back-to-top').tooltip('hide');
+                $('body,html').animate({
+                    scrollTop: 0
+                }, 800);
+                return false;
+            });
+        }
+    }
+    return scrollService;
+
+    });        
 //*************************************************************************************************    

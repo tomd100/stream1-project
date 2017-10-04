@@ -27,6 +27,11 @@ angular.module('MidiAuto')
         .when('/contact',{
             templateUrl: 'templates/contact.html',
             controller: 'ContactController'
+        })
+        
+        .when('/about',{
+            templateUrl: 'templates/about.html',
+            controller: 'AboutController'
         });
         
 //*************************************************************************************************
