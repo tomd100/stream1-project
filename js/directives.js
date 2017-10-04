@@ -1,7 +1,8 @@
 angular.module("MidiAutoDirective",[])
-.directive("temp", function() {
+
+.directive("faq-code", function() {
     return {
         restrict: "A",
-        templateUrl: "templates/directives/temp.tml"
+        templateUrl: "templates/directives/faq-code.html"
     };
 })

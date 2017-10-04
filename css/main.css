@@ -48,6 +48,36 @@ body {
     border-color: white;
 }
 
+/*------------------------------------------------------------------------------------------ Home Page */
+
+.home-section{
+    padding: 20px;
+    height:400px;
+}
+
+/*.home-text-div{*/
+/*    padding:20px 0;*/
+/*}*/
+
+.home-img-div{
+    margin: 30px 0;     
+    text-align:center;
+}
+
+.home-img{
+    max-width: 100%;
+}
+
+.sect4-img{
+    max-width: 70%;
+}
+
+/*------------------------------------------------------------------------------------------ FAQ Page */
+
+.faq-section{
+    padding: 20px;
+    height:300px;
+}
 
 /*------------------------------------------------------------------------------------------ footer */
 
