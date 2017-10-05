@@ -1,38 +1,20 @@
-
-angular.module("MidiAutoServices", [])
-
-//*************************************************************************************************
-
-    .factory("variablesService", function() {
-        
-        return {
-            logoImagePath: "images/logo/" ,
-            homeImagePath: "images/home/" ,
-            faqImagePath: "images/faq/" ,
-            contactImagePath: "images/contact/" ,
-            aboutImagePath: "images/about/" ,
-            
-            cssPath: "css/"
-        };
-    })
-    
-//*************************************************************************************************
-
-    .factory('APIService', function($http) {
+angular.module('UserService', [])                           //[] means no other dependencies - no other files. 
+    .factory('UserAPIService', function($http) {
  
-        return {
+        UserAPIService = {
             callAPI: function(url, data) {
                 return $http.post(url, data);
             }
         };
-    })
+        return UserAPIService;
+    });
     
 //*************************************************************************************************    
-
+angular.module("MidiAutoService", [])
     .factory('scrollService', function() {
     
-        return {
-            pageScroll:function(){
+    scrollService = {
+        pageScroll:function(){
             $(window).scroll(function () {
                 if ($(this).scrollTop() > 50) {
                     $('#back-to-top').fadeIn();
@@ -48,8 +30,25 @@ angular.module("MidiAutoServices", [])
                 }, 800);
                 return false;
             });
-            }
-        };
-    });       
-    
+        }
+    }
+    return scrollService;
+    })       
 //*************************************************************************************************    
+
+    // .factory("variablesService", function() {
+    //     variablesService = function(){    
+    //         return {
+    //             imagePath: "images/" ,
+    //             cssPath: "css/"
+    //         };
+    //     }
+    //     return variablesService;
+    // });
+
+    .factory("variablesService", function() {
+            return {
+                imagePath: "images/" ,
+                cssPath: "css/"
+            };
+    });

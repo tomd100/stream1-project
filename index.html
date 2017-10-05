@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html ng-app='MidiAuto'>
+<html ng-app='MidiAuto' ng-controller="IndexController"> 
 <head>
 
     <!--<base href="/stream1-project/">-->
@@ -22,12 +22,10 @@
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css" type="text/css"/>
     
-<!--*************************************************************************************************-->
-
-
-<!--*************************************************************************************************-->
-
 </head>
+
+<!--*************************************************************************************************-->
+<!--*************************************************************************************************-->
 
 <body>
 <!--************************************************************************************************ Nav Bar-->    
@@ -36,7 +34,7 @@
 
             <div class="nav navbar-header">
             
-                <img src="images/ma-logo.png" class="navbar-brand" alt="Logo">                
+                <img src="{{logoImagePath}}ma-logo.png" class="navbar-brand" alt="Logo">                
                 <a href="#" class="nav-a navbar-brand"><span class="nav-span">Midi Automation</span></a>
             
                 <button type="button" id="nav-button" class="navbar-toggle collapsed "

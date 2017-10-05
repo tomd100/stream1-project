@@ -1,0 +1,17 @@
+/********************* Colour reference chart****************
+*************************** comment ********* colour ******** 
+
+faq bg                      faqbg               white
+.back-to-top bg             bttbg               gray
+.back-to-top border         bttbg               gray
+.back-to-top hover bg       btthbg              gray
+#nav-button bc              nbbc                black
+#nav-button hover bg        nbhbg               white
+#nav-button focus bg        nbfbg               white
+#nav-button span bg         nbsbg               black
+.nav-span c                 nsc                 white
+.navbar-default bg          ndbg                white
+.navbar-default bc          ndbc                white
+
+
+*/

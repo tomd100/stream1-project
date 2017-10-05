@@ -1,5 +1,13 @@
+
 @import url('https://fonts.googleapis.com/css?family=Exo:100,200,300,400,500,600,700|Roboto:100,200,300,400,500,600,700');
 
+
+
+/*------------------------------------------------------------------------------------------ Background Colours */		
+
+
+
+/*------------------------------------------------------------------------------------------ Body */		
 
 body {
     padding-top:120px;
@@ -16,33 +24,33 @@ body {
     bottom: 120px;
     right: 40px;
     display:none;
-    background-color:gray;
-    border-color: gray;
+    background-color:/*bttbg*/gray;
+    border-color: /*bttb*/gray;
     opacity: .70;
 }
 
 .back-to-top:hover {
     opacity:1;
-    background-color:gray;
+    background-color:/*btthbg*/gray;
 }    
 
 /*------------------------------------------------------------------------------------------ Nav Bar */		
 
 #nav-button{
     margin-top: 25px;
-    border-color:black;
+    border-color:/*nbbc*/black;
 }
 
 #nav-button:hover{
-    background-color:white;
+    background-color:/*nbhbg*/white;
 }
 
 #nav-button:focus{
-    background-color:white;
+    background-color:/*nbfbg*/white;
 }
 
 #nav-button span{
-    background-color:black;
+    background-color:/*nbsbg*/black;
 }
 
 #ma-navbar{
@@ -53,7 +61,7 @@ body {
 }
 
 .nav-span{
-    color:black;
+    color:/*nsc*/black;
 }
  
 .navbar-brand {
@@ -63,8 +71,8 @@ body {
 }
 
 .navbar-default {
-    background-color: white;
-    border-color: white;
+    background-color:/*ndbg*/ white;
+    border-color: /*ndbc*/white;
 }
 
 /*------------------------------------------------------------------------------------------ Home Page */
@@ -116,14 +124,19 @@ body {
 
 .faq-section{
     padding: 20px;
-    height:300px;
+    /*height:300px;*/
+}
+
+.panel-default>.panel-heading {
+    background-color: /*faqbg*/white;
+    border:1px solid white;
 }
 
 /*------------------------------------------------------------------------------------------ Contact Page */
 
 /*------------------------------------------------------------------------------------------ About Page */
 
-/*------------------------------------------------------------------------------------------ footer */
+/*------------------------------------------------------------------------------------------ Footer */
 
 #div-footer{
     height: 100px;
