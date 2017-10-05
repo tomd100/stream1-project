@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css?family=Exo:100,200,300,400,500,600,700|Roboto:100,200,300,400,500,600,700');
+
+
 body {
     padding-top:120px;
     padding-bottom:120px;
@@ -124,11 +127,33 @@ body {
 
 #div-footer{
     height: 100px;
-    padding: 20px;
+    padding: 10px;
 }
 
 #div-footer span{
     display:block;
     color:black;
+}
+
+.social-links{
+    padding-bottom: 15px;
+}
+.social-links li a i{
+    width:32px;
+    height:32px;
+    padding:12px 0;
+    border-radius: 50%;
+    font-size:13px;
+    line-height: 7px;
+    text-align:center;
+    color: #fafafa;
+    background:#8f8f8f;
+    transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    -webkit-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;
+}
+.social-links li a i:hover{
+    background:#e84610;
 }
 /*------------------------------------------------------------------------------------------media queries */

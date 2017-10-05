@@ -9,8 +9,12 @@
     
 <!--*************************************************************************************************-->
 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css"/>
+
+<!--*************************************************************************************************-->
+    
     <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.css">
-    <link rel="stylesheet" type="text/css" href="css\main.css">
+    <link rel="stylesheet" type="text/css" href="css\style.css">
     
     <script type="text/javascript" src="bower_components/angular/angular.js"></script>
     <script type="text/javascript" src="bower_components/angular-route/angular-route.js"></script>
@@ -26,7 +30,6 @@
 </head>
 
 <body>
-    
 <!--************************************************************************************************ Nav Bar-->    
     <nav id="ma-navbar" class="navbar navbar-default navbar-fixed-top">
         <div class="container">
@@ -85,12 +88,23 @@
 
 <!--*************************************************************************************************-->
 
-<footer class="navbar-default navbar-fixed-bottom">
+<footer class="container-fluid navbar-default navbar-fixed-bottom">
 <!--<footer class="navbar-default">-->
-    <div id="div-footer" class="container">
-        <span>This is the footer - line 1....</span>
-        <span>This is the footer - line 2....</span>
-        <span>This is the footer - line 3....</span>
+    <!--<div id="div-footer" class="container">-->
+    <!--    <span>This is the footer - line 1....</span>-->
+    <!--    <span>This is the footer - line 2....</span>-->
+    <!--    <span>This is the footer - line 3....</span>-->
+    <!--</div>-->
+
+    <div id="div-footer" class="col-sm-offset-4 col-sm-4 col-sm-offset-4">
+        <!--<h5 class="uppercase general-sub">my social</h5>-->
+        <h5>Social</h5>
+        <ul class="list-inline social-links">
+            <li><a target="_blank" href="/"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+            <li><a target="_blank" href="/"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+            <li><a target="_blank" href="/"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+            <li><a target="_blank" href="/"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
+        </ul>
     </div>
 </footer>
 

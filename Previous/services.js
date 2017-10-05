@@ -13,7 +13,7 @@ angular.module('UserService', [])                           //[] means no other 
 angular.module("MidiAutoService", [])
     .factory('scrollService', function() {
     
-    scrollService = {
+    scrollService={
         pageScroll:function(){
             $(window).scroll(function () {
                 if ($(this).scrollTop() > 50) {
@@ -33,22 +33,5 @@ angular.module("MidiAutoService", [])
         }
     }
     return scrollService;
-    })       
+});        
 //*************************************************************************************************    
-
-    // .factory("variablesService", function() {
-    //     variablesService = function(){    
-    //         return {
-    //             imagePath: "images/" ,
-    //             cssPath: "css/"
-    //         };
-    //     }
-    //     return variablesService;
-    // });
-
-    .factory("variablesService", function() {
-            return {
-                imagePath: "images/" ,
-                cssPath: "css/"
-            };
-    });

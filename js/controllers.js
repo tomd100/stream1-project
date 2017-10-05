@@ -4,13 +4,19 @@ angular.module("RouteControllers", [])
 
 //*************************************************************************************************
 
-    .controller("HomeController", function($scope, scrollService) {
-        $scope.title = "Midi Automation";
+    .controller("HomeController", function($scope, scrollService, variablesService) {
+    // .controller("HomeController", function($scope, scrollService) {
+        // $scope.title = "Midi Automation";
         
+        $scope.title = "Midi Automation";
         scrollService.pageScroll();
         
+        $scope.imagePath = variablesService.imagePath;
+        $scope.cssPath = variablesService.cssPath;
+        // console.log($scope.imagePath);
+        // console.log($scope.cssPath);
+        
     })
-    
     
 //*************************************************************************************************    
 
