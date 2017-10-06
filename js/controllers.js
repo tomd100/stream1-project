@@ -15,12 +15,12 @@ angular.module("RouteControllers", [])
         
         $scope.cssPath = variablesService.cssPath;
         
-        console.log($scope.logoImagePath);
-        console.log($scope.homeImagePath);
-        console.log($scope.faqImagePath);
-        console.log($scope.contactImagePath);
-        console.log($scope.aboutImagePath);                        
-        console.log($scope.cssPath);
+        // console.log($scope.logoImagePath);
+        // console.log($scope.homeImagePath);
+        // console.log($scope.faqImagePath);
+        // console.log($scope.contactImagePath);
+        // console.log($scope.aboutImagePath);                        
+        // console.log($scope.cssPath);
         
     })
     

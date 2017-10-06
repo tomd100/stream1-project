@@ -77,47 +77,148 @@ body {
 
 /*------------------------------------------------------------------------------------------ Home Page */
 
-#home-intro-div{
-    text-align:center;
-    height: 500px;
-    line-height: 495px;
+/*---------------------------------- Test Parallax */
+.para-img1, .para-img2, .para-img3, .para-img4, .para-img5 {
+    position: relative;
+    opacity: 0.65;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border:1px solid;  
+}
+
+.para-img1 {  
+    background-image: url("../images/home/para-img1.jpeg");
+    min-height: 100%;
+    height:400px;
+}
+
+.para-img2 {  
+    background-image: url("../images/home/para-img9.jpg");
+    min-height: 100%;
+    height:400px;
+}
+
+.para-img3 {  
+    background-image: url("../images/home/para-img10.jpg");
+    min-height: 100%;
+    height:400px;
+}
+
+.para-img4 {  
+    background-image: url("../images/home/para-img11.jpg");
+    min-height: 100%;
+    height:400px;
+}
+
+.para-img5 {  
+    background-image: url("../images/home/para-img3.jpg");
+    min-height: 100%;
+    height:400px;
+}
+
+.para-text {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+}
+
+.para-text .border {
+    background-color: #111;
+    color: #fff;
+    padding: 18px;
+    font-size: 25px;
+    letter-spacing: 10px;
+}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+    .para-img1, .para-img2, .para-img3, .para-img4, .para-img5{
+        background-attachment: scroll;
+    }
+}
+/*----------------------------------*/
+
+#home-section0-img{
+    min-height: 100%;
+    height:400px;
+    position: relative;
     background-color: rgba(245, 245, 245, 0.4);
 }
 
-#home-intro-div span{
-    color: black;
-    vertical-align: middle;
-    display: inline-block;
+#home-section0-text{
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: #000;
 }
 
-
-.home-section{
-    padding: 20px;
-    /*max-height:400px;*/
+#home-section0-text .border{
+    background-color: #111;
+    color: #fff;
+    padding: 18px;
+    font-size: 25px;
+    letter-spacing: 10px;
 }
 
 @media screen and (min-width: 480px){
-    #home-section1, #home-section2, #home-section3, #home-section4{
-        padding-top:100px;
-        padding-bottom: 100px;
+    #home-section0, #home-section1, #home-section2, #home-section3, #home-section4{
+        padding-top:70px;
+        padding-bottom: 70px;
     }
 }
+
+.home-container{
+    /*padding-left:0px;*/
+    /*padding-right:0px;*/
+    /*margin-left:0px;*/
+    /*margin-right:0px;*/
+    /*border:1px solid;*/
+}
+
+.home-section{
+    /*padding: 20px 0;*/
+    /*border:1px solid;*/
+}
+
+.home-section p{
+    padding: 0 20px;
+}
+
+.home-section-div{
+    /*padding-left:15px;*/
+    /*padding-right:15px;*/
+    /*margin-left:auto;*/
+    /*margin-right:auto;*/
+    /*border:1px solid;*/
+}    
+
 
 /*.home-text-div{*/
 /*    padding:20px 0;*/
 /*}*/
 
 .home-img-div{
-    margin: 30px 0;     
     text-align:center;
 }
 
 .home-img{
-    max-width: 70%;
+    max-width: 100%;
+    margin: 30px 0;     
 }
 
 .home-sect4-img{
-    max-width: 70%;
+    max-width: 100%;
+    margin: 30px 0;  
+}
+.sect4-p{
+    margin:0 70px;
 }
 
 /*------------------------------------------------------------------------------------------ FAQ Page */
