@@ -16,17 +16,6 @@ angular.module("MidiAutoServices", [])
         };
     })
     
-//*************************************************************************************************
-
-    .factory('APIService', function($http) {
- 
-        return {
-            callAPI: function(url, data) {
-                return $http.post(url, data);
-            }
-        };
-    })
-    
 //*************************************************************************************************    
 
     .factory('scrollService', function() {
@@ -53,3 +42,16 @@ angular.module("MidiAutoServices", [])
     });       
     
 //*************************************************************************************************    
+    // .factory('modaService', function() {
+    
+    //     return { 
+    //     ModalService.showModal({
+    //         templateUrl: "contact-confirm",
+    //         controller: "ContactController"
+    //     }).then(function(modal) {
+    //     //it's a bootstrap element, use 'modal' to show it
+    //         modal.element.modal();
+    //         modal.close.then(function(result) {
+    //             console.log(result);
+    //         });
+    //     });

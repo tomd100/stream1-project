@@ -2,7 +2,6 @@
 @import url('https://fonts.googleapis.com/css?family=Exo:100,200,300,400,500,600,700|Roboto:100,200,300,400,500,600,700');
 
 
-
 /*------------------------------------------------------------------------------------------ Background Colours */		
 
 
@@ -167,13 +166,6 @@ body {
     letter-spacing: 10px;
 }
 
-@media screen and (min-width: 480px){
-    #home-section0, #home-section1, #home-section2, #home-section3, #home-section4{
-        padding-top:70px;
-        padding-bottom: 70px;
-    }
-}
-
 .home-container{
     /*padding-left:0px;*/
     /*padding-right:0px;*/
@@ -221,6 +213,15 @@ body {
     margin:0 70px;
 }
 
+/*------------------------------------------------------------------------------------------ media queries */
+
+@media screen and (min-width: 480px){
+    #home-section0, #home-section1, #home-section2, #home-section3, #home-section4{
+        padding-top:70px;
+        padding-bottom: 70px;
+    }
+}
+
 /*------------------------------------------------------------------------------------------ FAQ Page */
 
 .faq-section{
@@ -236,7 +237,13 @@ body {
 /*------------------------------------------------------------------------------------------ Contact Page */
 
 /*------------------------------------------------------------------------------------------ About Page */
-
+.text-error{
+    color:red;
+}
+.submitPressed .ng-invalid
+{
+    border:1px solid #f00;
+}
 /*------------------------------------------------------------------------------------------ Footer */
 
 #div-footer{
@@ -270,4 +277,4 @@ body {
 .social-links li a i:hover{
     background:#e84610;
 }
-/*------------------------------------------------------------------------------------------media queries */
+/*------------------------------------------------------------------------------------------ media queries */

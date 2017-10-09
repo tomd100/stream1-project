@@ -1,5 +1,5 @@
 
-angular.module('MidiAuto', ['ngRoute', 'RouteControllers', 'angular-storage', 'MidiAutoServices', 'MidiAutoDirectives']); // these are dependencies - adding UserService links the service to the app..?
+angular.module('MidiAuto', ['ngRoute', 'RouteControllers', 'MidiAutoServices', 'MidiAutoDirectives']); // these are dependencies - adding UserService links the service to the app..?
 
 angular.module('MidiAuto')
     .config(function ($locationProvider, $routeProvider) {
